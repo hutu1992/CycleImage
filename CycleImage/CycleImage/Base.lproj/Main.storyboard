@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8c-0H-S0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352.5" y="216.5"/>
+            <point key="canvasLocation" x="1259.5" y="74.5"/>
         </scene>
         <!--Normal Image Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -68,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEi-B5-pLp">
-                                <rect key="frame" x="0.0" y="124" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="A1M-sj-NN2"/>
                                 </constraints>
@@ -76,29 +76,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="mcT-fK-uCM"/>
                                 </connections>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2hL-tO-5l9">
-                                <rect key="frame" x="316" y="234" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="44M-aQ-KN1">
+                                <rect key="frame" x="316" y="210" width="39" height="37"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hEi-B5-pLp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="0AJ-9M-gOS"/>
-                            <constraint firstItem="hEi-B5-pLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5yO-qP-fKA"/>
-                            <constraint firstAttribute="trailing" secondItem="hEi-B5-pLp" secondAttribute="trailing" id="HlY-lX-g8X"/>
-                            <constraint firstAttribute="trailing" secondItem="2hL-tO-5l9" secondAttribute="trailing" constant="20" id="i1F-SH-d8D"/>
-                            <constraint firstItem="2hL-tO-5l9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="mXd-St-iPv"/>
+                            <constraint firstAttribute="trailing" secondItem="44M-aQ-KN1" secondAttribute="trailing" constant="20" id="3FT-2x-4un"/>
+                            <constraint firstItem="hEi-B5-pLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L5e-T6-wny"/>
+                            <constraint firstAttribute="trailing" secondItem="hEi-B5-pLp" secondAttribute="trailing" id="gqK-kP-Dwg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="44M-aQ-KN1" secondAttribute="bottom" constant="420" id="jEZ-5E-l5u"/>
+                            <constraint firstItem="hEi-B5-pLp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="jPU-X7-YeM"/>
+                            <constraint firstItem="hEi-B5-pLp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="pCK-q8-IxX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qbq-QM-Gif"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageScrollView" destination="hEi-B5-pLp" id="RUy-wX-2wg"/>
-                        <outlet property="pageControl" destination="2hL-tO-5l9" id="HtB-ME-GqP"/>
+                        <outlet property="pageControl" destination="44M-aQ-KN1" id="KmW-4Y-CMK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823.5" y="-80.5"/>
+            <point key="canvasLocation" x="1842.5" y="-166.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4kv-YP-47D">
@@ -138,7 +139,7 @@
                                     <constraint firstAttribute="height" constant="150" id="Wg3-O4-BuY"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="delegate" destination="2Y7-Fn-EO7" id="N8l-fd-dxc"/>
+                                    <outlet property="delegate" destination="2Y7-Fn-EO7" id="Wm4-te-vZN"/>
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Fbe-WU-fXv">
