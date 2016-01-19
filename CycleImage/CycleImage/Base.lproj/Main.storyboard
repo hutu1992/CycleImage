@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -37,14 +38,27 @@
                                     <segue destination="2Y7-Fn-EO7" kind="show" id="ORV-M6-6U3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOE-Jh-fZ4">
+                                <rect key="frame" x="53" y="331" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tuN-C4-rv0"/>
+                                </constraints>
+                                <state key="normal" title="三张图片实现无限轮播器"/>
+                                <connections>
+                                    <segue destination="w7R-Nd-Cmg" kind="show" id="Bgb-oc-z2U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vyo-Os-xF9" secondAttribute="trailing" constant="50" id="34U-ku-NXB"/>
                             <constraint firstItem="7jb-tK-oxf" firstAttribute="trailing" secondItem="Vyo-Os-xF9" secondAttribute="trailing" id="6Ru-uL-XDI"/>
+                            <constraint firstItem="HOE-Jh-fZ4" firstAttribute="leading" secondItem="PeM-Ix-Js6" secondAttribute="leadingMargin" constant="37" id="BNI-Pc-yIJ"/>
                             <constraint firstItem="Vyo-Os-xF9" firstAttribute="leading" secondItem="PeM-Ix-Js6" secondAttribute="leading" constant="50" id="N0g-6B-Ce3"/>
                             <constraint firstItem="7jb-tK-oxf" firstAttribute="leading" secondItem="Vyo-Os-xF9" secondAttribute="leading" id="PgT-JZ-Jo1"/>
+                            <constraint firstItem="HOE-Jh-fZ4" firstAttribute="top" secondItem="7jb-tK-oxf" secondAttribute="bottom" constant="63" id="mMF-4I-B5z"/>
                             <constraint firstItem="7jb-tK-oxf" firstAttribute="top" secondItem="Vyo-Os-xF9" secondAttribute="bottom" constant="44" id="nQP-aF-wTi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HOE-Jh-fZ4" secondAttribute="trailing" constant="31" id="qqo-kL-EjM"/>
                             <constraint firstItem="Vyo-Os-xF9" firstAttribute="top" secondItem="dMA-I0-Fe8" secondAttribute="bottom" constant="100" id="s51-A5-WbH"/>
                         </constraints>
                     </view>
@@ -53,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8c-0H-S0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1259.5" y="74.5"/>
+            <point key="canvasLocation" x="1158.5" y="108.5"/>
         </scene>
         <!--Normal Image Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -99,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1842.5" y="-166.5"/>
+            <point key="canvasLocation" x="1758.5" y="-225.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4kv-YP-47D">
@@ -119,7 +133,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y12-hq-WUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.5" y="216.5"/>
+            <point key="canvasLocation" x="712.5" y="126.5"/>
         </scene>
         <!--Auto Image Controller-->
         <scene sceneID="fUH-By-1w5">
@@ -164,7 +178,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rx6-Wp-Udr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809.5" y="675.5"/>
+            <point key="canvasLocation" x="1758.5" y="494.5"/>
+        </scene>
+        <!--Cycle Image Controller-->
+        <scene sceneID="v08-w6-T5u">
+            <objects>
+                <viewController id="w7R-Nd-Cmg" customClass="CycleImageController" customModule="CycleImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U5k-Kn-XL6"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwf-xO-iAz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5q-LN-dAe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efe-fY-bCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152.5" y="1031.5"/>
         </scene>
     </scenes>
 </document>
